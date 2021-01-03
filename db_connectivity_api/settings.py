@@ -20,7 +20,7 @@ STATIC_URL = env.str('STATIC_URL', default='static/')
 
 SECRET_KEY = env.str('SECRET_KEY')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default='localhost').split()
 
 # Application definition
 
@@ -106,3 +106,5 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+APPEND_SLASH = False
