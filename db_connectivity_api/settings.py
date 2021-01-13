@@ -1,3 +1,4 @@
+import django_heroku
 import environ
 import os
 
@@ -108,3 +109,4 @@ USE_L10N = True
 USE_TZ = True
 
 APPEND_SLASH = False
+django_heroku.settings(locals())
