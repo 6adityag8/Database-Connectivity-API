@@ -19,7 +19,7 @@ MEDIA_URL = env.str('MEDIA_URL', default='media/')
 STATIC_ROOT = public_root('static')
 STATIC_URL = env.str('STATIC_URL', default='static/')
 
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY', default='c7@vbq6u%j_d-bdiaaqk04hq24jab^vvhb-c4n%sti_hp$gqd@')
 
 ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default='localhost').split()
 
